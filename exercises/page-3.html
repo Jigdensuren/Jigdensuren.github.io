@@ -10,15 +10,48 @@
       
     <meta name="description"
         content="Between 150 and 160 characters (including spaces). Like the title, this is important for search engines.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        body {
+            @apply bg-cyan-800;
+            color: white
+            
+        }
+        body {
+            @apply font-serif;
+        }
+        header {
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%]
+            bg-orange-700;
+            }
+        header h1 {
+            @apply font-serif font-bold text-7xl;
+            }
+        header h2  {
+            @apply italic text-4xl;
+        }
+
+        section {   
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            }
+        section h2 {   
+            @apply mt-8 font-bold tracking-tight text-3xl;
+            }
+
+        section h3 {   
+            @apply mt-6;
+            }
+
+        section p {   
+            @apply mb-4 text-lg;
+            }
+
+    </style>
+
 
 </head>
 
 <body>
-
-    <!-- Navigation menu with logo -->
-    <nav></nav>
-
-
     <!-- Hero block -->
     <header>
         <h1>Big heading</h1>
@@ -64,10 +97,6 @@
 
     </main>
     <!-- main content ends here -->
-
-    <!-- Links to related web pages, legal and copyright -->
-    <footer></footer>
-
 </body>
 
 </html>

@@ -7,6 +7,35 @@
     <title>A Tale of Two Cities</title>
     <meta name="description"
         content="A basic web page containing some text from A Tale of Two Cities, a novel published in 1859 by English author Charles Dickens.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            background-color: oklch(45% 0.085 224.283);
+        }
+        header {
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            }
+        header h1 {   
+            @apply font-serif text-center tracking-tighter text-8xl;
+            }
+        section {   
+            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            }
+        section h2 {   
+            @apply mt-8 font-serif tracking-tight text-4xl;
+            }
+
+        section h3 {   
+            @apply mt-6 font-serif text-3xl;
+            }
+
+        section p {   
+            @apply mb-4 font-sans text-lg;
+            }
+        
+    </style>
+
 </head>
 
 <body>
