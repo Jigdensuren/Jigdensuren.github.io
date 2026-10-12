@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Video</title>
+
+    <meta name="description"
+        content="A hero block with a background video that plays in a continuous loop and includes a tinted overlay.">
+
+    <link rel="preload" href="assets/videos/hero-still.jpg
+    " as="image">
+
+    <!-- Link to Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom styles -->
+    <style type="text/tailwindcss">
+
+        header { 
+            @apply relative
+            min-h-[60vh] md:min-h-[80vh]
+            flex flex-col justify-center
+            px-8 lg:px-60 py-12
+            text-center
+            overflow-hidden;
+        }
+
+        header h1 {
+            @apply relative z-10
+            text-7xl md:text-8xl
+            text-white font-bold
+            tracking-tight
+        }
+
+        header h2 {
+            @apply relative z-10
+            text-4xl md:text-5xl
+            text-white
+            text-shadow-lg/30;
+        }
+        header video {
+            @apply absolute inset-0
+                w-full h-full
+                object-cover object-center
+                object-center md:object-top;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- hero block -->
+    <header>
+        <video autoplay muted loop playsinline poster="assets/videos/hero-still.jpg">
+
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+        </video>
+
+        <h1>Education for Life</h1>
+
+        <h2>A brighter career and future</h2>
+
+    </header>
+    <!-- /hero block -->
+
+</body>
+
+</html>
