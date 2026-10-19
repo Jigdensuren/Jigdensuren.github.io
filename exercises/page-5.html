@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Jigdensuren Amartuvshin 80990 -->
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,13 +24,13 @@
     }
     header h1 {
         @apply text-6xl md:text-7xl tracking-tight text-center
-            mb-8 lg:mb-12;
+            mb-8 lg:mb-12 font-['Oswald'];
     }
 
     h1, h2 { @apply text-green-700 font-bold }
 
     header p {
-        @apply text-green-900 text-2xl md:text-3xl/12 text-center font-normal;
+        @apply text-green-900 text-2xl md:text-3xl/12 text-center font-normal font-['Lato'];
     }
 
     section {
@@ -37,11 +40,11 @@
     }
 
     section h2 {
-        @apply text-4xl lg:text-5xl tracking-tight mt-10 lg:mt-14 lg:mb-2;
+        @apply text-4xl lg:text-5xl tracking-tight mt-10 lg:mt-14 lg:mb-2 font-['Oswald'];
     }
 
     section p {
-        @apply text-lg md:text-xl/8 mb-5;
+        @apply text-lg md:text-xl/8 mb-5 font-['lato'];
     }
 
     section .highlight-text {
@@ -59,7 +62,21 @@
         scroll-behavior: smooth;
         scroll-padding-top: 20px;
     }
+    a {
+        @apply 
+            underline underline-offset-4    
+        text-blue-700
+            hover:text-red-700
+            focus:text-red-700
+            transition-colors duration-300;
+    }
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Prata&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -75,7 +92,8 @@
         <p><a href="#kells-tcd">5: Book of Kells Exhibition, Trinity College, Dublin</a></p>
 
 
-        <p>Visiting Ireland is like taking a great big breath of fresh air. Ireland is a country brimming with fun and
+        <p class="mt-10">Visiting Ireland is like taking a great big breath of fresh air. Ireland is a country brimming
+            with fun and
             fascinating ways for visitors to spend their days and nights. You'll discover just the right mountain to
             climb, painting to pore over, sports team to cheer on, or whatever else takes your fancy.</p>
 
@@ -169,6 +187,8 @@
             <p class="highlight-text">Annual Number of Visitors: <b>983,410</b></p>
 
             <p><a href="#top-of-page">Return to top of page &#8593;</a></p>
+
+            <p><a href="../index.html">&#8592; Back to Home page</a></p>
 
         </section>
 

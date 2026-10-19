@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Jigdensuren Amartuvshin 80990 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary Smith | Creative Digital Designer</title>
+    <title>Jigdensuren Amartuvshin</title>
     <meta name="description"
         content="Hi I'm Jigdensuren, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
     <meta name="google-site-verification" content="or951uT_1ptS9C8Oyv0QwXQbe29M-dfD1lfNDxyUBwU" />
@@ -14,9 +16,18 @@
 
 
     <style type="text/tailwindcss">
+        body { @apply text-center bg-green-100 
+        font-['Lato']; }
+
+        
         header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-            }
+        @apply min-h-[60vh] md:min-h-[80vh]
+        bg-[url('assets/img/business.jpg')]
+        bg-cover bg-center
+        flex flex-col justify-center
+        px-8 lg:px-60 py-12
+        text-center;
+        }
 
         section {   
             @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
@@ -26,42 +37,95 @@
             }
 
         section h3 {   
-            @apply mt-6;
+            @apply mt-6 pt-8 ;
             }
 
         section p {   
             @apply mb-4;
             }
+        
+        a {
+        @apply text-green-800
+            hover:text-green-600
+            focus:text-green-600
+            transition-colors duration-300;
+        }
+
+         header { 
+            @apply min-h-[60vh] md:min-h-[80vh]
+            bg-linear-to-b from-purple-600 to-purple-900 
+            flex flex-col justify-center items-center 
+            px-8 lg:px-60 py-12;
+        }
+
+        header h1 {
+            @apply text-7xl md:text-8xl
+            text-white font-bold
+            tracking-tight
+            mb-6;  
+        }
+
+        header h2 {
+            @apply text-4xl md:text-5xl
+            text-white;
+        }
+      .slide-in-top {
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        } 
+
+        @keyframes slide-in-top {
+        0% {
+            transform: translateY(-1000px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        }
+
+        .slide-in-left {
+            animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @keyframes slide-in-left {
+        0% {
+            transform: translateX(-1000px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+        }
+
 
         
     </style>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Prata&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
 <body>
-    <h1>
-        Hi, I'm Jigdensuren Amartuvshin
-    </h1>
-    <h2>
-        Web / UI Designer
-    </h2>
+    <header>
+        <h1 class="slide-in-top">Jigdensuren Amartuvshin</h1>
 
-    <img src="assets/img/developer.jpg" alt="developer">
+        <h2 class="slide-in-left">Creative Web Developer &#128513;</h2>
+    </header>
+
+
+
 
     <p>
         I created this website to showcase some of my recent web design work.
     </p>
-    <p><a href="exercises/page-1.html">A Tale of Two Cities</a>
-    </p>
-    <p><a href="exercises/soccer.html">A Tale of Two Cities</a>
-    </p>
-    <p><a href="exercises/laptop">A Tale of Two Cities</a>
-    </p>
+    <p><a href="exercises/page-1.html">Page-1</a>
     <p><a href="exercises/page-2.html">page-2</a>
     </p>
     <p><a href="exercises/page-3.html">page-3</a>
@@ -69,6 +133,14 @@
     <p><a href="exercises/page-4.html">page-4</a>
     </p>
     <p><a href="exercises/page-5.html">page-5</a>
+    </p>
+
+    <br>
+
+    <p><a href="exercises/soccer.html">soccer</a>
+    </p>
+    <p><a href="exercises/laptop">laptop</a>
+    </p>
     </p>
     <p><a href="exercises/hair.html">hair</a>
     </p>
